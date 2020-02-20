@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+  <h4>
+    Log In
+    <small><a href="{% url 'reset_password' %}">(Lost password?)</a></small>
+  </h4>
+  <form method="post">{% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons submit='Ok' %}{% endbuttons %}
+  </form>
+
+{% endblock content %}

@@ -1,19 +1,12 @@
-<html>
-  <head>
-    <title>Tweeter</title>
-  </head>
-  <body>
-    <header>
-      <div class="nav-left">
-        <h1><a href="{% url 'home' %}">Tweeter</a></h1>
-      </div>
-      <div class="nav-right">
-        <a href="{% url 'tweet_new' %}">Add Tweet</a>
-      </div>
-    </header>
+{% extends 'base.html' %}
 
-    <div>
-    {% block content %} {% endblock content %}
+{% block content %}
+  {% for tweet in object_list %}
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">{{ tweet.body }}</h5>
+        <p class="card-text">{{ tweet.user }}</p>
+      </div>
     </div>
-  </body>
-</html>
+  {% endfor %}
+{% endblock content %}

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "60b8f0cd04c873d4d61d2dce6400e7d31ba83347e3d3420a58c2f455e7128235"
+            "sha256": "fb9ff42f9ed3f3ee560f7f4786bb3b5b02f72c2489f4dd7c2c39bb7ddf7ef88c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,14 @@
             ],
             "version": "==3.2.3"
         },
+        "beautifulsoup4": {
+            "hashes": [
+                "sha256:05fd825eb01c290877657a56df4c6e4c311b3965bda790c613a3d6fb01a5462a",
+                "sha256:9fbb4d6e48ecd30bcacc5b63b94088192dcda178513b2ae3c394229f8911b887",
+                "sha256:e1505eeed31b0f4ce2dbb3bc8eb256c04cc2b3b72af7d551a4ab6efd5cbe5dae"
+            ],
+            "version": "==4.8.2"
+        },
         "dj-database-url": {
             "hashes": [
                 "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
@@ -37,6 +45,22 @@
             ],
             "index": "pypi",
             "version": "==3.0.3"
+        },
+        "django-bootstrap-datepicker-plus": {
+            "hashes": [
+                "sha256:490058eba99d47f48a7d24fa78581c0e36375bdc7aa9605783eeb170d51fd0df",
+                "sha256:a8bc19cc6846f97ff1e6c447f4e0387881d16e8afa1e8bd7a652c19e545c566b"
+            ],
+            "index": "pypi",
+            "version": "==3.0.5"
+        },
+        "django-bootstrap4": {
+            "hashes": [
+                "sha256:0fcd84f8414a58b43df0b331c00c8b2f1786ae28f75f419b4d33b06fca43e0d1",
+                "sha256:39f97cbce85eb66f6d76be2029bae171bd3863d0c6932b1c2dae7f299c569b90"
+            ],
+            "index": "pypi",
+            "version": "==1.1.1"
         },
         "django-heroku": {
             "hashes": [
@@ -93,6 +117,13 @@
                 "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"
             ],
             "version": "==1.14.0"
+        },
+        "soupsieve": {
+            "hashes": [
+                "sha256:bdb0d917b03a1369ce964056fc195cfdff8819c40de04695a80bc813c3cfa1f5",
+                "sha256:e2c1c5dee4a1c36bcb790e0fabd5492d874b8ebd4617622c4f6a731701060dda"
+            ],
+            "version": "==1.9.5"
         },
         "sqlparse": {
             "hashes": [

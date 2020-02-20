@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'bootstrap4',
+    'bootstrap_datepicker_plus',
+    
     'users',
     'tweets',
 ]
@@ -59,7 +63,7 @@ ROOT_URLCONF = 'tweeter_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -104,6 +108,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+BOOTSTRAP4 = { 'include_jquery' : True }
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/

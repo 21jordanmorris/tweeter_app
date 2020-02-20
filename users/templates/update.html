@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block extrascript %}
+  {{ form.media }}
+{% endblock %}
+
+{% block content %}
+  <h4>
+    Profile
+    <small><a href="{% url 'change_password' %}">(change password)</a></small>
+  </h4>
+  <form method="post">{% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons submit='Ok' %}{% endbuttons %}
+  </form>
+{% endblock content %}
